@@ -51,105 +51,261 @@
 
         <!--BOTON INICIAR-->
         <div class="text-center mb-4">
-            <button type="button" class="btn btn-primary">
+            <button id="btninit" type="button" class="btn btn-primary">
                 Iniciar Juego
             </button>
         </div>
 
         <!--EL TURNO-->
         <section class="text-center mb-4">
-            <h2 class="h5 fw-semibold">
-                Turno:
-            </h2>
+           <p id="turno" class="h5 fw-bold">Esperando jugadores...</p>
         </section>
-
-        
 
         <!-- TABLERO -->
-        <section class="col-9 mx-auto mb-4">
+        <section class="col-10 mx-auto mb-4">
+            <table class="table table-bordered border-dark">
+                <tbody>
 
-            <!-- FILA 1 -->
-            <div class="row g-1 mb-1">
-                <div class="col-4">
-                    <div class="ratio ratio-1x1">
-                        <button type="button" class="btn p-0 border-0">
-                            <img src="img/bg.png" alt="" class="w-100 h-100">
-                        </button>
-                    </div>
-                </div>
+                    <!-- FILA 1 -->
+                    <tr>
+                        <!-- CASILLA 1 -->
+                        <td class="p-1">
+                            <div class="ratio ratio-1x1">
+                                <button type="button"
+                                        id="casilla1"
+                                        class="btn p-0 border-0">
 
-                <div class="col-4">
-                    <div class="ratio ratio-1x1">
-                        <button type="button" class="btn p-0 border-0">
-                            <img src="img/bg.png" alt="" class="w-100 h-100">
-                        </button>
-                    </div>
-                </div>
+                                    <img src="img/bg.png"
+                                        id="img1"
+                                        alt=""
+                                        class="w-100 h-100 object-fit-cover">
+                                </button>
+                            </div>
+                        </td>
 
-                <div class="col-4">
-                    <div class="ratio ratio-1x1">
-                        <button type="button" class="btn p-0 border-0">
-                            <img src="img/bg.png" alt="" class="w-100 h-100">
-                        </button>
-                    </div>
-                </div>
-            </div>
+                        <!-- CASILLA 2 -->
+                        <td class="p-1">
+                            <div class="ratio ratio-1x1">
+                                <button type="button"
+                                        id="casilla2"
+                                        class="btn p-0 border-0">
 
-            <!-- FILA 2 -->
-            <div class="row g-1 mb-1">
-                <div class="col-4">
-                    <div class="ratio ratio-1x1">
-                        <button type="button" class="btn p-0 border-0">
-                            <img src="img/bg.png" alt="" class="w-100 h-100">
-                        </button>
-                    </div>
-                </div>
+                                    <img src="img/bg.png"
+                                        id="img2"
+                                        alt=""
+                                        class="w-100 h-100 object-fit-cover">
+                                </button>
+                            </div>
+                        </td>
 
-                <div class="col-4">
-                    <div class="ratio ratio-1x1">
-                        <button type="button" class="btn p-0 border-0">
-                            <img src="img/bg.png" alt="" class="w-100 h-100">
-                        </button>
-                    </div>
-                </div>
+                        <!-- CASILLA 3 -->
+                        <td class="p-1">
+                            <div class="ratio ratio-1x1">
+                                <button type="button"
+                                        id="casilla3"
+                                        class="btn p-0 border-0">
 
-                <div class="col-4">
-                    <div class="ratio ratio-1x1">
-                        <button type="button" class="btn p-0 border-0">
-                            <img src="img/bg.png" alt="" class="w-100 h-100">
-                        </button>
-                    </div>
-                </div>
-            </div>
+                                    <img src="img/bg.png"
+                                        id="img3"
+                                        alt=""
+                                        class="w-100 h-100 object-fit-cover">
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <!--FILA 2-->
+                    <tr>
+                        <!-- CASILLA 1 -->
+                        <td class="p-1">
+                            <div class="ratio ratio-1x1">
+                                <button type="button"
+                                        id="casilla4"
+                                        class="btn p-0 border-0">
 
-            <!-- FILA 3 -->
-            <div class="row g-1 mb-1">
-                <div class="col-4">
-                    <div class="ratio ratio-1x1">
-                        <button type="button" class="btn p-0 border-0">
-                            <img src="img/bg.png" alt="" class="w-100 h-100">
-                        </button>
-                    </div>
-                </div>
+                                    <img src="img/bg.png"
+                                        id="img4"
+                                        alt=""
+                                        class="w-100 h-100 object-fit-cover">
+                                </button>
+                            </div>
+                        </td>
 
-                <div class="col-4">
-                    <div class="ratio ratio-1x1">
-                        <button type="button" class="btn p-0 border-0">
-                            <img src="img/bg.png" alt="" class="w-100 h-100">
-                        </button>
-                    </div>
-                </div>
+                        <!-- CASILLA 2 -->
+                        <td class="p-1">
+                            <div class="ratio ratio-1x1">
+                                <button type="button"
+                                        id="casilla5"
+                                        class="btn p-0 border-0">
 
-                <div class="col-4">
-                    <div class="ratio ratio-1x1">
-                        <button type="button" class="btn p-0 border-0">
-                            <img src="img/bg.png" alt="" class="w-100 h-100">
-                        </button>
-                    </div>
-                </div>
-            </div>
+                                    <img src="img/bg.png"
+                                        id="img5"
+                                        alt=""
+                                        class="w-100 h-100 object-fit-cover">
+                                </button>
+                            </div>
+                        </td>
 
+                        <!-- CASILLA 3 -->
+                        <td class="p-1">
+                            <div class="ratio ratio-1x1">
+                                <button type="button"
+                                        id="casilla6"
+                                        class="btn p-0 border-0">
+
+                                    <img src="img/bg.png"
+                                        id="img6"
+                                        alt=""
+                                        class="w-100 h-100 object-fit-cover">
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <!--FILA 3-->
+                    <tr>
+                        <!-- CASILLA 1 -->
+                        <td class="p-1">
+                            <div class="ratio ratio-1x1">
+                                <button type="button"
+                                        id="casilla7"
+                                        class="btn p-0 border-0">
+
+                                    <img src="img/bg.png"
+                                        id="img7"
+                                        alt=""
+                                        class="w-100 h-100 object-fit-cover">
+                                </button>
+                            </div>
+                        </td>
+
+                        <!-- CASILLA 2 -->
+                        <td class="p-1">
+                            <div class="ratio ratio-1x1">
+                                <button type="button"
+                                        id="casilla8"
+                                        class="btn p-0 border-0">
+
+                                    <img src="img/bg.png"
+                                        id="img8"
+                                        alt=""
+                                        class="w-100 h-100 object-fit-cover">
+                                </button>
+                            </div>
+                        </td>
+
+                        <!-- CASILLA 3 -->
+                        <td class="p-1">
+                            <div class="ratio ratio-1x1">
+                                <button type="button"
+                                        id="casilla9"
+                                        class="btn p-0 border-0">
+
+                                    <img src="img/bg.png"
+                                        id="img9"
+                                        alt=""
+                                        class="w-100 h-100 object-fit-cover">
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
     </main>
+
+<script>
+    let jugador1 = document.getElementById("jugador1");
+    let jugador2 = document.getElementById("jugador2");
+    let juegoIniciado = false;
+
+    document.getElementById("btninit").addEventListener("click", iniciarJuego);
+
+    // VALIDAR NOMBRES DE JUGADORES E INICIAR JUEGO
+    function iniciarJuego(){
+        let nombre1 = jugador1.value.trim();
+        let nombre2 = jugador2.value.trim();
+        if(nombre1 === ""){
+            alert("Ingrese el nombre 1.")
+        }else if(nombre2 === ""){
+            alert("Ingrese el nombre 2.");
+        }else{
+
+            // REINICIAR PARTIDA
+            turnoActual ="X";
+            tablero=["","","","","","","","",""];
+
+            for(let i=0; i<9; i++){
+                let idImagen = "img" +(i+1);
+                document.getElementById(idImagen).src = "img/bg.png";
+            }
+            // MOSTRAR EL PRIMER TURNO
+            let turno = document.getElementById("turno");
+            turno.textContent="Turno de: "+nombre1;
+            juegoIniciado = true
+        }
+    }
+
+    // TURNO ACTUAL Y POSICIONES
+    let turnoActual = "X";
+    let tablero=["","","","","","","","",""];
+    // EVENTOS EN LAS LAS CASILLAS
+    for(let i=0; i<9; i++){
+        let idCasilla = "casilla"+(i+1);
+        document.getElementById(idCasilla).addEventListener("click", function(){
+        marcarCasilla(i);
+        });
+    }
+
+    // MARCAR CASILLA Y ALTERNAR TURNOS
+    function marcarCasilla(numero){
+        let idImagen = "img"+(numero+1);
+        if(tablero[numero]==="" && juegoIniciado === true){
+
+            tablero[numero] = turnoActual;
+
+            if(turnoActual === "X"){
+                document.getElementById(idImagen).src= "img/x.png";
+                document.getElementById("turno").textContent = "Turno de: "+jugador2.value;
+                turnoActual = "O";
+            }else{
+                document.getElementById(idImagen).src= "img/o.png";
+                document.getElementById("turno").textContent = "Turno de: "+jugador1.value;
+                turnoActual = "X";
+            }
+            comprobarGanador();
+        }
+    }
+    let combinaciones = [
+        [0, 1, 2],
+        [3, 4, 5],
+        [6, 7, 8],
+        [0, 3, 6],
+        [1, 4, 7],
+        [2, 5, 8],
+        [0, 4, 8],
+        [2, 4, 6]
+    ]
+
+    // COMPROBAR COMBINACIONES GANADORAS 
+    function comprobarGanador(){
+        for(let i = 0; i<combinaciones.length;i++)
+        {
+            let posiciones = combinaciones[i];
+            if(tablero[posiciones[0]] !== "" && tablero[posiciones[0]] === tablero[posiciones[1]] && tablero[posiciones[1]] === tablero[posiciones[2]]){
+                if(tablero[posiciones[0]]==="X"){
+                    document.getElementById("turno").textContent = "Ganó "+ jugador1.value + ".";
+                }else{
+                    document.getElementById("turno").textContent = "Ganó "+ jugador2.value + ".";
+                }
+                juegoIniciado = false;
+                return;
+            }
+        }
+        // COMPROBAR EMPATE
+        if(tablero.includes("")===false){
+            document.getElementById("turno").textContent = "Empate";
+            juegoIniciado = false;
+        }
+    }
+</script>
 </body>
 </html>
