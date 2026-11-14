@@ -292,8 +292,10 @@
             let posiciones = combinaciones[i];
             if(tablero[posiciones[0]] !== "" && tablero[posiciones[0]] === tablero[posiciones[1]] && tablero[posiciones[1]] === tablero[posiciones[2]]){
                 if(tablero[posiciones[0]]==="X"){
+                    alert("Ganó el jugador "+jugador1.value);
                     document.getElementById("turno").textContent = "Ganó "+ jugador1.value + ".";
                 }else{
+                    alert("Ganó el jugador "+jugador2.value);
                     document.getElementById("turno").textContent = "Ganó "+ jugador2.value + ".";
                 }
                 juegoIniciado = false;
@@ -302,6 +304,7 @@
         }
         // COMPROBAR EMPATE
         if(tablero.includes("")===false){
+            alert("Empate, ningún jugador ganó.")
             document.getElementById("turno").textContent = "Empate";
             juegoIniciado = false;
         }
